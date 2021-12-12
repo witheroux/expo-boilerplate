@@ -2,7 +2,7 @@ import React from 'react';
 import { Text } from 'react-native';
 import { Link } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { makeStyles, useStyles } from '@utils/theme/ThemeProvider';
+import { makeStyles, useStyles } from '@utils/theme';
 
 export const HomeScreen = () => {
     const { layout } = useStyles(styles);

@@ -1,9 +1,8 @@
 import React from 'react';
+import { useColorScheme } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { Root } from '@nav/Root';
-import { ThemeProvider } from './utils/theme/ThemeProvider';
-import { useColorScheme } from 'react-native';
-import { DarkTheme, LightTheme } from './utils/theme/Themes';
+import { DarkTheme, LightTheme, ThemeProvider } from '@utils/theme';
 
 const App = () => {
   const systemScheme = useColorScheme();
