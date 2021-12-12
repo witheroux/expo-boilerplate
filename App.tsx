@@ -1,21 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { Root } from '@nav/Root';
+import { ThemeProvider } from './utils/theme/ThemeProvider';
+import { useColorScheme } from 'react-native';
+import { DarkTheme, LightTheme } from './utils/theme/Themes';
 
-export default function App() {
+const App = () => {
+  const systemScheme = useColorScheme();
+  // TODO (William): Get theme for stored settings.
+  // const storedScheme = useStoredScheme();
+
+  const systemTheme = systemScheme === 'dark' ? DarkTheme : LightTheme;
+  // const storedTheme = storedScheme === 'dark' ? DarkTheme : LightTheme;
+  // const theme = storedScheme ? storedTheme : systemTheme;
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ThemeProvider theme={systemTheme}>
+      <NavigationContainer>
+        <Root />
+      </NavigationContainer>
+    </ThemeProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
