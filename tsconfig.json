@@ -6,6 +6,9 @@
       "@components/*": [
         "./components/*"
       ],
+      "@constants/*": [
+        "./constants/*"
+      ],
       "@nav/*": [
         "./nav/*"
       ],

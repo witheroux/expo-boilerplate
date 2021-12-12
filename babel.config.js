@@ -6,6 +6,7 @@ module.exports = function(api) {
       ["module-resolver", {
         "alias": {
           "@assets": "./assets",
+          "@constants/*": "./constants/*",
           "@components": "./components",
           "@nav": "./nav",
           "@screens": "./screens",

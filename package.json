@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
     "android": "expo start --android",
+    "eject": "expo eject",
+    "lint": "echo 'Linting not yet implemented.'; exit 0",
     "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
+    "start": "expo start",
+    "test": "echo 'Testing not yet implemented.; exit 1",
+    "type-check": "echo 'Type checking not yet implemented.'; exit 0",
+    "web": "expo start --web"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.6",
