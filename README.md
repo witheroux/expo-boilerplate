@@ -84,7 +84,7 @@ export default ThemedView;
 ```
 
 ### Navigation
-TODO
+This boilerplate uses [React Navigation](https://reactnavigation.org/) as a its navigation library. It uses a main native stack navigator with a group within it with modals.
 
 ### Linting
 A script has been added to lint the code to ensure consistency in the code. 
@@ -114,7 +114,7 @@ TODO
 
 - [x] Basic Navigation
 - [x] Basic Theming
-- [ ] Linting (Prettier and eslint configs)
+- [x] Linting (Prettier and eslint configs)
 - [ ] State management? (Redux, React-Query, something else?)
 - [ ] Data-fetching (React-Query, something else?)
 - [ ] i18n (i18-next?)
