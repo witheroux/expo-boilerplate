@@ -17,7 +17,7 @@ npm run web # Starts the development server and opens on the web
 ## Development 
 ### Aliases
 Aliases have been defined to facilitate the path structure. The various aliases 
-can be found in `tsconfig.json` and `babel.config.js`.
+can be found in `.eslintrc`, `tsconfig.json` and `babel.config.js`.
 
 ### Theming
 This boilerplate provides a set of theming utilities to help with customizing 
