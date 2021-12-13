@@ -1,0 +1,61 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint",
+        "prettier",
+        "react",
+        "react-native",
+        "sort-keys-fix",
+        "import-order-autofix"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended",
+        "plugin:import/recommended",
+        "plugin:import/typescript"
+    ],
+    "rules": {
+        /* Sort Keys Fix */
+        "sort-keys-fix/sort-keys-fix": "error", // We favor this over the usual sort-keys as it has autofix.
+        /* Import */
+        "import/namespace": "off",
+        "import/order": ["error", {
+            "groups": ["builtin", "external", "internal", "parent", "sibling", "index"]
+        }],
+        /* Prettier */
+        "prettier/prettier": "error",
+        /* React Native */
+        "react-native/no-unused-styles": "error",
+        "react-native/sort-styles": "error",
+        "react-native/no-inline-styles": "error",
+        "react-native/no-color-literals": "error"
+    },
+    "settings": {
+        "import/resolver": {
+            "alias": {
+                "extensions": [".ts", ".tsx", ".json"],
+                "map": [
+                    ["@assets", "./assets"],
+                    ["@components", "./components"],
+                    ["@constants", "./constants"],
+                    ["@nav", "./nav"],
+                    ["@screens", "./screens"],
+                    ["@services", "./services"],
+                    ["@utils", "./utils"]
+                ]
+            }
+        }
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "es6": true,
+        "node": true,
+        "react-native/react-native": true
+    }
+}

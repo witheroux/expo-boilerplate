@@ -20,6 +20,6 @@ const App = () => {
       </NavigationContainer>
     </ThemeProvider>
   );
-}
+};
 
 export default App;

@@ -1,40 +1,35 @@
-import React from 'react';
-import { createContext, useContext } from "react";
-import { StyleSheet } from 'react-native';
-import { DefaultTheme, Theme } from "./Themes";
+import React, { createContext, useContext } from 'react';
+import { DefaultTheme, Theme } from './Themes';
 
 /**
  * Props for the Theme Provider
  */
 interface ThemeProviderProps {
-    theme?: Theme;
+  theme?: Theme;
 }
 
 /**
  * Theme context for this application.
  */
 const ThemeContext = createContext({
-    theme: DefaultTheme,
+  theme: DefaultTheme,
 });
 
 /**
  * Theme provider for this application.
  */
 const ThemeProvider: React.FC<ThemeProviderProps> = (props) => {
-    const {
-        theme = DefaultTheme,
-        children
-    } = props;
+  const { theme = DefaultTheme, children } = props;
 
-    return (
-        <ThemeContext.Provider
-            value={{
-                theme,
-            }}
-        >
-            {children}
-        </ThemeContext.Provider>
-    )
+  return (
+    <ThemeContext.Provider
+      value={{
+        theme,
+      }}
+    >
+      {children}
+    </ThemeContext.Provider>
+  );
 };
 
 /**
@@ -44,18 +39,11 @@ const ThemeConsumer = ThemeContext.Consumer;
 
 /**
  * Hook to facilitate usage of ThemeContext in a single import.
- * 
+ *
  * @returns Theme from the ThemeContext
  */
 const useTheme = () => {
-    return useContext(ThemeContext);
+  return useContext(ThemeContext);
 };
 
-
-export {
-    ThemeConsumer,
-    ThemeContext,
-    ThemeProvider,
-    ThemeProviderProps,
-    useTheme,
-};
+export { ThemeConsumer, ThemeContext, ThemeProvider, ThemeProviderProps, useTheme };
