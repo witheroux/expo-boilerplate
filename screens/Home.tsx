@@ -3,13 +3,15 @@ import { Text } from 'react-native';
 import { Link } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { makeStyles, useStyles } from '@utils/theme';
+import { TRANSLATION_KEYS, useTranslation } from '@utils/i18n';
 
 export const HomeScreen = () => {
   const { layout } = useStyles(styles);
+  const { translate } = useTranslation();
 
   return (
     <SafeAreaView style={layout}>
-      <Text>Home screen</Text>
+      <Text>{translate(TRANSLATION_KEYS.hello)}</Text>
       <Link
         to={{
           screen: 'Popup',
