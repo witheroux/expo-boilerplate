@@ -1,6 +1,6 @@
 import i18n, { TranslateOptions } from 'i18n-js';
 import { locale as deviceLocale } from 'expo-localization';
-import React, { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 import { DEFAULT_LOCALE, Locale } from './Locale';
 import { en, fr } from './translations';
 

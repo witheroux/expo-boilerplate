@@ -23,7 +23,6 @@ The `<ThemeProvider />` expects to be provided a theme which can then be used th
 
 ```tsx
 // App.tsx
-import React from 'react';
 import { useColorScheme } from 'react-native';
 import { ThemedView } from '@components/ThemedView';
 import { DarkTheme, LightTheme, ThemeProvider } from '@utils/theme';
@@ -45,7 +44,6 @@ The `makeStyles()` function returns a function to provide to the `useStyles()` h
 
 ```tsx
 // ThemedView.tsx
-import React from 'react';
 import { Text, View } from 'react-native';
 import { makeStyles, Theme, useStyles } from '@utils/theme';
 
@@ -97,7 +95,6 @@ The `<TranslationProvider />` expects to be provided a locale which can be used 
 
 ```tsx
 // App.tsx
-import React from 'react';
 import { locale } from 'expo-localization';
 import { Text, View, useColorScheme } from 'react-native';
 import { TranslatedItem } from '@components/TranslatedItem';
@@ -118,7 +115,6 @@ The `useTranslation()` hook returns a way to update the locale with the `setLoca
 
 ```tsx
 // TranslatedItem.tsx
-import React from 'react';
 import { Text } from 'react-native';
 import { useTranslation } from '@utils/i18n';
 

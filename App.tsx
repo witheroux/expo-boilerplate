@@ -1,4 +1,3 @@
-import React from 'react';
 import { locale as deviceLocale } from 'expo-localization';
 import { useColorScheme } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
