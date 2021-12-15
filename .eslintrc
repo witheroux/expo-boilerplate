@@ -6,8 +6,7 @@
         "prettier",
         "react",
         "react-native",
-        "sort-keys-fix",
-        "import-order-autofix"
+        "sort-keys-fix"
     ],
     "extends": [
         "eslint:recommended",

@@ -27,7 +27,7 @@ interface TranslationContextProps {
  */
 const TranslationContext = createContext<TranslationContextProps>({
   locale: DEFAULT_LOCALE,
-  setLocale: () => {},
+  setLocale: () => '',
   translate: () => '',
 });
 

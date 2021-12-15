@@ -6,6 +6,7 @@
     "android": "expo start --android",
     "eject": "expo eject",
     "lint": "eslint --fix",
+    "lint-staged": "lint-staged",
     "ios": "expo start --ios",
     "start": "expo start",
     "test": "echo 'Testing not yet implemented.; exit 1",
@@ -44,6 +45,7 @@
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-native": "^4.0.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "lint-staged": "^12.1.2",
     "prettier": "^2.5.1",
     "typescript": "~4.3.5"
   },
