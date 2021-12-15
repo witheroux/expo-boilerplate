@@ -1,10 +1,7 @@
-// TODO (William): Find better way to structure this.
-interface TranslationKeys {
-  hello: string;
-}
-
-const TRANSLATION_KEYS: TranslationKeys = {
+const TRANSLATION_KEYS = {
   hello: 'hello',
 };
+
+type TranslationKeys = typeof TRANSLATION_KEYS;
 
 export { TranslationKeys, TRANSLATION_KEYS };
